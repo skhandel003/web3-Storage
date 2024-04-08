@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>storage</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Test</h1>
+          <hr />
+          <br />
+        </div>
+      </div>
+      <form id="imageForm">
+        <div class="form-group">
+          <label for="base64ImageInput">Image Base64</label>
+          <input type="text" class="form-control" id="base64ImageInput" placeholder="Enter Base64 Encoded Image">
+        </div>
+        <button type="button" id="pushImageBtn" class="btn btn-primary">Upload Image</button>
+      </form>
+      <br />
+      <form id="textForm">
+        <div class="form-group">
+          <label for="htmlTextInput">HTML Text</label>
+          <textarea class="form-control" id="htmlTextInput" rows="3" placeholder="Enter HTML Text"></textarea>
+        </div>
+        <button type="button" id="pushTextBtn" class="btn btn-primary">Upload Text</button>
+      </form> <p id="accountAddress" class="text-center">0x000</p>
+      <form id="imagesForm">
+        <div class="form-group">
+          <label for="selectImageInput">Image Index</label>
+          <input type="number" class="form-control" id="selectImageInput" placeholder="Enter the index of the image">
+        </div>
+        <button type="button" id="pullImageBtn" class="btn btn-primary">Display Image</button>
+      </form>
+      <div id="imageContainer" class="mt-4">
+        <!-- Displayed image will appear here -->
+      </div>
+      
+
+      </form>
+      <br />
+      <!-- You can add more interaction forms here as needed -->
+    </div>
+  </div>
+</div>
+
+
+     
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
